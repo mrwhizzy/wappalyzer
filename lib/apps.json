@@ -1063,6 +1063,7 @@
       "env": "^fn_compare_strings$",
       "html": [
         "&nbsp;Powered by (?:<a href=[^>]+cs-cart\\.com|CS-Cart)",
+         "<div class=\"cm-cart-content",
         ".cm-noscript[^>]+</style>"
       ],
       "icon": "CS Cart.png",
@@ -4081,6 +4082,7 @@
         "Set-Cookie": "frontend=\\;confidence:50"
       },
       "icon": "Magento.png",
+      "html": "<script type=\"text/x-magento-init\">",
       "implies": "PHP",
       "script": [
         "js/mage",
@@ -4841,6 +4843,9 @@
       "cats": [
         6
       ],
+      "headers": {
+        "Set-cookie": "OCSESSID"
+      },
       "html": "(?:index\\.php\\?route=[a-z]+/|Powered By <a href=\"[^>]+OpenCart)",
       "icon": "OpenCart.png",
       "implies": "PHP",
