@@ -1,22 +1,22 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'wappalyzer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "wappalyzer"
-  spec.version       = Wappalyzer::VERSION
-  spec.authors       = ["pulkit21"]
-  spec.email         = ["pulkit.ag02@gmail.com"]
+  spec.name                    = 'wappalyzer'
+  spec.version                 = Wappalyzer::VERSION
+  spec.required_ruby_version   = '>= 2.5.5'
+  spec.authors                 = %w[pulkit21 mrwhizzy]
+  spec.email                   = ['pulkit.ag02@gmail.com', 'chr.melas@gmail.com']
+  spec.homepage                = 'https://github.com/pulkit21/wappalyzer'
+  spec.summary                 = 'Analyzes a provided url and returns any services it can detect'
+  spec.description             = 'This analyzes a url and tries to guess what software it uses ' \
+                                 '(like server software, CMS, framework, programming language).'
 
-  spec.summary       = %q{Analyzes a provided url and returns any services it can detect}
-  spec.description   = %q{This analyzes a url and tries to guess what software it uses (like server software, CMS, framework, programming language).}
-  spec.homepage      = "https://github.com/pulkit21/wappalyzer"
-
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.files                   = Dir['{lib,spec}/**/*', 'README*', 'LICENSE*', 'Rakefile'] &
+                                 `if [ -d '.git' ]; then git ls-files -z; fi`.split("\x0")
 
   spec.add_dependency "mini_racer", ">= 0.2.4"
 
