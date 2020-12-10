@@ -5416,7 +5416,15 @@
       "cats": [
         6
       ],
-      "html": "Powered by <a\\s+[^>]+>PrestaShop",
+      "headers": {
+        "Set-cookie": "PrestaShop"
+      },
+      "html": [
+        "Powered by <a\\s+[^>]+>PrestaShop",
+        "var prestashop",
+        "n.agent='plprestashop-download'",
+        "PrestaShop"
+      ],
       "icon": "PrestaShop.png",
       "implies": "PHP",
       "meta": {
@@ -7277,7 +7285,10 @@
       "cats": [
         6
       ],
-      "html": "<div id=\"vmMainPage",
+      "html": [
+        "<div id=\"vmMainPage",
+        "com_virtuemart"
+      ],
       "icon": "VirtueMart.png",
       "implies": "Joomla",
       "website": "virtuemart.net"
@@ -7603,7 +7614,13 @@
         6
       ],
       "env": "woocommerce",
-      "html": "<!-- WooCommerce",
+      "html": [
+        "<!-- WooCommerce",
+        "wp-content/plugins/woocommerce",
+        "woocommerce-js",
+        "woocommerce-form",
+        "woocommerce.css"
+      ],
       "icon": "WooCommerce.png",
       "implies": [
         "WordPress",
@@ -8486,7 +8503,10 @@
       "cats": [
         6
       ],
-      "html": "(?:<!--Powered by nopCommerce|Powered by: <a[^>]+nopcommerce)",
+      "html": [
+        "(?:<!--Powered by nopCommerce|Powered by: <a[^>]+nopcommerce)",
+        "nopCommerce"
+      ],
       "icon": "nopCommerce.png",
       "website": "www.nopcommerce.com"
     },
