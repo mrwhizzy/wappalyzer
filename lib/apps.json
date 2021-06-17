@@ -7684,6 +7684,7 @@
         "Set-Cookie": "xid=[a-z\\d]{32}(?:;|$)"
       },
       "html": [
+        "<script type=\"text/x-cart-data\">",
         "Powered by X-Cart(?: (\\d+))? <a[^>]+href=\"http://www\\.x-cart\\.com/\"[^>]*>\\;version:\\1",
         "<a[^>]+href=\"[^\"]*(?:\\?|&)xcart_form_id=[a-z\\d]{32}(?:&|$)"
       ],
