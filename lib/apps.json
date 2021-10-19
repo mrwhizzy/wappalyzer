@@ -6290,6 +6290,20 @@
       "script": "[^/]*//[^/]*serving-sys\\.com/",
       "website": "sizmek.com"
     },
+    "Skroutz Analytics": {
+      "cats": [
+        10
+      ],
+      "html": "skroutz_analytics",
+      "website": "https://developer.skroutz.gr/analytics/"
+    },
+    "Skroutz Analytics Plugin": {
+      "cats": [
+        10
+      ],
+      "html": "data-wc-skroutz-analytics-plugin-version",
+      "website": "https://developer.skroutz.gr/analytics/"
+    },
     "Slimbox": {
       "cats": [
         7,
