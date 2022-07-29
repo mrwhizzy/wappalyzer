@@ -2491,6 +2491,27 @@
       "icon": "Gauges.png",
       "website": "get.gaug.es"
     },
+    "Generation Y (1)": {
+      "cats": [
+        1
+      ],
+      "html": "generation-y",
+      "website": "http://www.generation-y.gr"
+    },
+    "Generation Y (2)": {
+      "cats": [
+        1
+      ],
+      "html": "Generation Y",
+      "website": "http://www.generation-y.gr"
+    },
+    "Generation Y (3)": {
+      "cats": [
+        1
+      ],
+      "html": "gy.digital",
+      "website": "http://www.generation-y.gr"
+    },
     "Gentoo": {
       "cats": [
         28
