@@ -354,6 +354,27 @@
       "script": "(?:ad\\.advertstream\\.com|adxcore\\.com)",
       "website": "www.advertstream.com"
     },
+    "Advisable (1)": {
+      "cats": [
+        1
+      ],
+      "html": "Advisable",
+      "website": "https://www.advisable.gr"
+    },
+    "Advisable (2)": {
+      "cats": [
+        1
+      ],
+      "html": "adv_copyright_block",
+      "website": "https://www.advisable.gr"
+    },
+    "Advisable (3)": {
+      "cats": [
+        1
+      ],
+      "html": "advisable.gr",
+      "website": "https://www.advisable.gr"
+    },
     "Adzerk": {
       "cats": [
         36
