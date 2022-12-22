@@ -3889,6 +3889,13 @@
       "script": "lightbox.*\\.js",
       "website": "lokeshdhakar.com/projects/lightbox2/"
     },
+    "Lighthouse": {
+      "cats": [
+        1
+      ],
+      "html": "lighthouse.gr",
+      "website": "https://lighthouse.gr"
+    },
     "LimeSurvey": {
       "cats": [
         19
@@ -7295,6 +7302,20 @@
       },
       "icon": "Venda.png",
       "website": "venda.com"
+    },
+    "Vendallion (1)": {
+      "cats": [
+        6
+      ],
+      "html": "Vendallion",
+      "website": "https://vendallion.com"
+    },
+    "Vendallion (2)": {
+      "cats": [
+        6
+      ],
+      "html": "https://vendallion.com",
+      "website": "https://vendallion.com"
     },
     "Veoxa": {
       "cats": [
