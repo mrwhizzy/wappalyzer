@@ -21,10 +21,19 @@ module Wappalyzer
     CATEGORIES = JSON_FILE['categories'].to_json
     APPS = JSON_FILE['apps'].to_json
 
-    def analyze(url, redirect_limit = 10, cookies = nil)
+    def analyze(url, redirect_limit = 10, cookies = nil, ref_uri = nil)
       raise TooManyRedirectsError.new('Too many HTTP redirects') if redirect_limit.zero?
 
-      uri = URI(url)
+      url = url.to_s
+      uri = URI(Addressable::URI.escape(url))
+      if ref_uri
+        uri.scheme = ref_uri.scheme unless uri.scheme
+        uri.host = ref_uri.host unless uri.host
+        uri.port = ref_uri.port unless uri.port
+        uri = URI(uri.to_s)
+        url = uri.to_s
+      end
+
       req = build_request(uri, cookies)
       conf = { use_ssl: uri.scheme == 'https', verify_mode: OpenSSL::SSL::VERIFY_NONE, open_timeout: 5 }
 
@@ -35,8 +44,8 @@ module Wappalyzer
         http.request(req)
       end
 
-      return analyze(URI.join(uri, res['location']), redirect_limit - 1,
-                     res['Set-Cookie']) if res.is_a? Net::HTTPRedirection
+      return analyze(res['location'], redirect_limit - 1,
+                     res['Set-Cookie'], uri) if res.is_a? Net::HTTPRedirection
 
       headers = res.each_header.each_with_object({}) { |(k, v), hsh| hsh[utf8_encoding(k).downcase] = utf8_encoding(v) }
       body = utf8_encoding(res.body)
