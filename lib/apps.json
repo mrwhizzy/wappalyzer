@@ -6353,14 +6353,16 @@
       "cats": [
         10
       ],
-      "html": "analytics.skroutz.gr/analytics(?:\\.min)?\\.js",
+      "html": "analytics\\.skroutz\\.gr/analytics(?:\\.min)?\\.js|analytics\\.skroutz\\.gr/js/payload",
+      "script": "analytics\\.skroutz\\.gr/analytics(?:\\.min)?\\.js|analytics\\.skroutz\\.gr/js/payload",
       "website": "https://developer.skroutz.gr/analytics/"
     },
     "Skroutz Analytics (skroutza)": {
       "cats": [
         10
       ],
-      "html": "skroutza.skroutz.gr/skroutza(?:\\.min)?\\.js",
+      "html": "skroutza\\.skroutz\\.gr/skroutza(?:\\.min)?\\.js|skroutza\\.skroutz\\.gr/js/payload",
+      "script": "skroutza\\.skroutz\\.gr/skroutza(?:\\.min)?\\.js|skroutza\\.skroutz\\.gr/js/payload",
       "website": "https://developer.skroutz.gr/analytics/"
     },
     "Skroutz Analytics Plugin": {
