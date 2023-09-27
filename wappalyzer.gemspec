@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.files                   = Dir['{lib,spec}/**/*', 'README*', 'LICENSE*', 'Rakefile'] &
                                  `if [ -d '.git' ]; then git ls-files -z; fi`.split("\x0")
 
+  spec.add_dependency "addressable", "2.8.1"
   spec.add_dependency "mini_racer", "0.6.3"
 
   spec.add_development_dependency "bundler", "~> 1.11"
